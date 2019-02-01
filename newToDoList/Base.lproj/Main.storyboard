@@ -38,6 +38,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="Z0P-Sl-TKL"/>
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="tWK-Fo-HeY"/>
                                 </connections>
                             </tableView>
@@ -59,6 +60,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="xLe-Kr-mpN" id="Pc6-72-eTX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,6 +99,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="28"/>
                                 <state key="normal" title="ADD"/>
+                                <connections>
+                                    <action selector="addItemBottum:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Ilq-9W-FSB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -118,6 +125,9 @@
                         </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="newItemText" destination="ctA-EB-Byz" id="oRf-OF-7B6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="MXa-sx-wtV">

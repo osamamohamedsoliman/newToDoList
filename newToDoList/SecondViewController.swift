@@ -9,7 +9,17 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    
+    @IBOutlet var newItemText: UITextField!
+    @IBAction func addItemBottum(_ sender: Any) {
+        
+        toDoList.append(newItemText.text!)
+        newItemText.text = ""
+        UserDefaults.standard.set(toDoList, forKey: "toDoList")
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
